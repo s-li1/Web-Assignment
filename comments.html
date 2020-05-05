@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Comments|Steven Li's Web Systems Assignment</title>
+	<!--Linking page to css style sheet-->
+	<link rel="stylesheet" type="text/css" href="websystems.css">
+</head>
+
+<body>
+
+<header role="banner">
+	<nav role=”navigation” aria-label="Main Menu">
+		<div class="navbar center-align light-font">
+		  <a class = "active" href="comments.html">Comments</a>
+		  <a href="future.html">Future</a>
+		  <a href="past.html">Past</a>
+		  <a href="index.html">Home</a>
+		  <div class="navbar-left">
+		    <a href="index.html">
+		    	<img src ="img_avatar.jpg" alt = "A Profile Image of Steven Li. Click on it to go back to homepage.">
+		    </a>
+		  </div>
+		</div>
+	</nav>
+
+
+	<div id="header-page">
+		<div class = "content center-align">
+			<br>
+			<h1>Comments</h1>
+		</div>
+	</div>
+</header>
+
+<main role=”main”>
+	<div class="less-strict-container">
+		<p>It is important to understand what sorts of features are used in the development of a professional and usable website. This page provides some comments about technical, aesthetic and accessibility features used in here.</p>
+		<br>
+		<input type="checkbox" id="technical">
+		<label class="light-font" for="technical">Technical</label>
+		
+
+		<div class="comments">
+		<h2>Website Structure</h2>
+		<p>There's a lot that goes on behind this website! First things first, this website based on the <a href="https://online.uts.edu.au/webapps/blackboard/content/listContent.jsp?course_id=_42465_1&content_id=_3973303_1&mode=reset" target="_blank">UTS Web Assignment Specifications</a> that were provided.</p>
+		<p> You'll probably notice that it's made up of 4 HTML pages and 1 CSS stylesheet. They include:</p>
+			<ul>
+				<li>index.html<span><small> - the home page of the website</small></span></li>
+				<li>past.html<span><small> - a story of my past</small></span></li>
+				<li>future.html<span><small> - a description of my future plans</small></span></li>
+				<li>comments.html<span><small> - comments and explanations of the creation of this website </small></span></li>
+				<li>websystems.css <span><small> - a stylesheet that all 4 HTMl pages share, assisting in the overall structure, consistency and aesthetics of the website.</small></span></li>
+			</ul>
+		 <p>So what are HTML and CSS exactly? Well if you used an analogy, you can think of HTML as the skeleton of the human; its lines of code that create the structure of the website. CSS on the otherhand can be seen as the skin or the visual appearance of the site.</p>
+
+		<p>Below is a illustrated representation that provides a basic idea of how this website was structured. </p>
+		<img src = "website-structure.png" alt = "Basic Website Structure">
+		<p>I wanted to create a structure that was not only coherent and presentable to users but also to myself or developers. The website consists of four semantic tags. With HTML 5, semantic tags allows us to have more meaningful structure to our website because they clearly state their purpose and can be easily identified by both web browsers and developers! The Header tag is the top part of each webpage. It is used to cover all content including our Nav tag and our page title. Our Nav tag contains a navigation bar that provides links for users to be  directed to any of the 4 html pages. Following this is our Main tag which holds our primary content. Lastly we have the Footer tag which is found at the bottom of our pages and is a place to put copyright information, contact details, etc. </p>
+		<p>If we go deeper, within each semantic tag, are div tags. This website uses a lot of div tags as a way of grouping certain elements together and having it be presented the way it is. </p>
+		<p>Many of these div tags and other element tags use CSS attributes such as class and id. The class attribute allows elements that have the same class name in any web page to inherit the same properties. The id attribute on the other hand is only used to give certain properties to one element. </p>
+
+		<h2>Code Explanations</h2>
+
+		<img src = "code.png" alt = "General Code structure">
+		<p>We can see in the above code a general idea of how this website was structured. A semantic tag is used to hold content related it. In this case, the header tag holds another semantic tag, the nav, and our div, a tags, h1, etc. Thus forming our header! Much of the lines of code that belong within a specific tag have been indented for clarity. You'll notice many of the div tags utilise classes and ids, enabling us to change the visual properties of these elements! </p>
+		<img src = "css.png" alt = "General CSS structure">
+		<p>The above screenshot is a general structure example of how we use CSS in our stylesheet. We can use selectors to call upon an element or class or id that we want to style. It's important to note that CSS follows a set of rules known as <span>specificty.</span> It helps determine which style to apply on an element. This example uses an "element.class" selector. This means that we to apply a certain style to any h1 element that has a center-align class! You can see that it's alot more detailed as to what to style rather than simply styling all h1 elements.</p>
+		<h2>CSS Table</h2>
+		<p>The following is a table that breaks down on some examples of the CSS configurations used: </p>
+		<table>
+			<thead>
+			    <tr>
+			      <th scope="col">Name</th>
+			      <th scope="col">Type</th>
+			      <th scope="col">Purpose</th>
+			    </tr>
+		  	</thead>
+
+			<tr>
+				<td>body</td>
+				<td>element</td>
+				<td>Establishes the default style of the webpage body with a margin property of 0 and font size property of 20 pixels. </td>
+			</tr>
+			<tr>
+				<td>h1, h2, h3, p</td>
+				<td>element</td>
+				<td>Used as headings or texts for webpages and have certain style properties such as color, font-family and font-size. They are all unique and even two of the same tags may different based on specificity, the css selector involved or whether they include particualr attributes such as a class. Most font-sizes use relative length units such as em and rem, which are determined by the parent or root elements' font size that precede these elements, such as the set size of body.</td>
+			</tr>
+			<tr>
+				<td>img</td>
+				<td>element</td>
+				<td>applied a style to images including positioning, size and box shadow depending on specificity and the css selector involved.  </td>
+			</tr>
+			<tr>
+				<td>span</td>
+				<td>element</td>
+				<td>applied a style to create inline circles. Found in index.html after a potential paragraph.  </td>
+			</tr>
+			<tr>
+				<td>@font-face</td>
+				<td>CSS rule</td>
+				<td>Used to call upon downloaded fonts and give them a name that can be easily accessed by properties like font-family.</td>
+			</tr>
+			<tr>
+				<td>@media</td>
+				<td>CSS rule</td>
+				<td>Used to help with the formatting and responsiveness of the website layout on smaller devices such as mobile phones. </td>
+			</tr>
+			<tr>
+				<td>.#hsc-section , #computer-section, #work-section, #background-section</td>
+				<td>id</td>
+				<td>Used unique id's for certain single div elements to style them. This included changing the background color of the div elements and stretching them to fill the device's screen.</td>
+			</tr>
+			<tr>
+				<td>.container</td>
+				<td>class</td>
+				<td>Used on elements such as Div tags that contain element related features such as text and images within, to be "compressed" into a box.</td>
+			</tr>
+			<tr>
+				<td>.project-card</td>
+				<td>class</td>
+				<td>Used to form a card or rectangular box about example projects I've done in past.html. Cards were coloured and included a box shadow with resizing and positioning to fit the center of the screen.</td>
+			</tr>
+			<tr>
+				<td>.navbar</td>
+				<td>class</td>
+				<td>Used to implement our navigation bar at the top and have it consistent in its positioning.</td>
+			</tr>
+			<tr>
+				<td>.center-align</td>
+				<td>class</td>
+				<td>Used on text related elements such as p or h1 to simply align them horizontally to the middle of the page.</td>
+			</tr>
+			<tr>
+				<td>:hover</td>
+				<td>pseudo class selector</td>
+				<td>Used to create a visual color change when user has cursor over certain elements with this selector. </td>
+			</tr>
+			<tr>
+				<td>:active</td>
+				<td>pseudo class selector</td>
+				<td>Used to create a noticeable visual underline on navbar class to indicate that user is on a specific page. </td>
+			</tr>
+		</table>
+	</div>
+		<input type="checkbox" id="title2">
+		<label class="light-font" for="title2">Aesthetics</label>
+		
+
+		<div class="comments">
+		<h2>Thought Process</h2>	
+		<p>I wanted to create a website that I thought would look visually appealing but also highly responsive and interactive. I didn't want to shower readers with too much information or have too many unecessary elements. So I think much of this website's aesthestics comes from looking at other websites. Many current websites now use a flat or minalistic design approach. It's simple and easy to follow. </p>
+		
+		<h2>Responsiveness</h2>
+		<p>Along with being providing visuals to our webpages, I also wanted to creative a interactive website that was responsive to certain user actions. This included implementing hovering and transition features on certain elements. The Navigation Bar is a primary example where when a person hovers over a link, the colour gradually changes from white to blue. When a user clicks on a link, they're redirected to that destination and now the link is underlined to indicate they're on that page. Images and certain div cards also hover selectors so that they could pop out or present a box shadow. </p>
+		<p>On top of this, was ensuring that the website could fit and cater smaller screen devices. This included using particular property values on images, divs and text such as percentages, rem and em units so that their sizes can be adjusted to specific screen size.</p>
+		<h2>Colour</h2>
+		<p> I think personally having too many colours all up front can be off putting. Similar to wearing outfits, you want to pick colors that match well together. I decided to KISS (keep it simple, stupid). I wouldn't say I'm great at color blocking at all so I only really wanted 2-3 colors that matched and could be used to represent the structure of my website consistently in all my pages. This in general included a blue, dark grey and white color. A lighter tone of blue was also used on certain elements to distinguish themselves from others. In my past page, I used other colours like red, green and purple. The reason for this was to bring a richer feeling to readers about myself as well clearly indicate to users they're on a particular section. With all my color choices, I actually wanted to create meaning. I used a sky blue colour across my webpages to represent a sense of freedom and trust along with the fact that blue is cooling in nature to us. Other examples include colours used in past.html where a purple color is used for my <a href="past.html#background-section">background</a>  to represent compassion and preciousness, a red color for my <a href="past.html#hsc-section">hsc</a> to represent enthusiasm and interest, green for my <a href="past.html#computer-section">computing experience</a> to symbolize growth and lastly an orange color for my <a href="past.html#work-section"> work experience</a> to symbolize determination. </p>
+		<div>
+			<figure>
+	 			 <img src="primary-colour-palette.png" alt="Primary Colour Palette">
+	  			 <figcaption>Primary Colour Palette used throughout website.</figcaption>
+			</figure>
+			<figure>
+	 			 <img src="other-palette.png" alt="Palette specific to past.html">
+	  			 <figcaption>Other Palette specific to past.html</figcaption>
+			</figure>
+		</div>
+
+		<h2>Typography</h2>
+		<p>The main fonts I used were: </p>
+		<ul>
+			<li>Bebas Neue</li>
+			<li>Avenir</li>
+		</ul>
+		<p> Both are them are Sans-serif fonts, which are known for their easy to read, simplistic design. Bebas Neue has a blocky nature to it and its presensation in capital letters  makes it perfect when used for large header elements. I wanted a font that could simultaneously contrast this strong font and complement it. Since Bebas Neue is a sans-serif font, I realised it goes really well with Avenir when it's used for paragraph or p elements. </p>
+
+		<h2>Layout</h2>
+		
+		<p>The website layout was purposefully done the way it was so that it could be easy to follow and each section could be distinguished. Margin and padding properties were used to create spacing between elements. Appropriate headings were used that were followed by p elements or smaller text to ensure a nice layout that can be read and is pleasing. </p>
+
+		</div>
+
+		<input type="checkbox" id="title3">
+		<label class="light-font" for="title3">Accessibility</label>
+		
+
+		<div class="comments">
+
+		<p>It's important that we create webpages that are usable and cater to all users. Making webpages that are more accessible will allow people with disabilities to follow, interact as well as better understand what is on screen. This website was designed with a set of guidelines in mind known as the <a href = "https://www.w3.org/TR/WCAG21/">W3C Web Content Accessibility Guidelines</a></p>
+
+		<h2>Screen Readers</h2>
+		<p>In order </p>
+
+
+		</div>
+	</div>
+
+</main>
+<br>
+<div class="return-top center-align">
+	<a href = "#header-page">Go to top</a>
+</div>
+<div class="footer">
+    <p>© 2020 <a href="index.html">Steven Li.</a> All rights reserved. Resources used can be found in HTML comments</p>
+</div>
+
+</body>
+</html>
