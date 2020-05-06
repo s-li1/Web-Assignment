@@ -662,3 +662,14 @@ figcaption {
   font-size: 0.75em;
 }
 
+code {
+
+  background-color: #95a5a6;
+  color: white;
+}
+
+
+span {
+  color: #2196F3;
+}
+
