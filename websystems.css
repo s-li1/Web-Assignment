@@ -22,6 +22,12 @@
     src: url("font/Avenir/AvenirLTStd-Book.otf");/*where our font can be located*/
 }
 
+@font-face {
+    font-family: Avenir-Font-Medium; /*What we will call our font*/
+    src: url("font/Avenir/AvenirLTStd-Medium.otf");/*where our font can be located*/
+}
+
+
 html, body {
   margin: 0;
   height: 100%;
@@ -679,17 +685,19 @@ figcaption {
 }
 
 code {
-
-  background-color: #95a5a6;
-  color: white;
+  color:#455A64;
+  font-family: monospace;
+  
 }
 
 
 span {
-  color: #2196F3;
+  font-family: Avenir-Font-Medium;
 }
 
 p.center-align a {
   color: #455A64;
 }
+
+
 
