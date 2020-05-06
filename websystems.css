@@ -441,17 +441,17 @@ li a:visited {
 
 #work-section img {
 	display: block;
-  	float: left;
-  	margin-right: 5px;
-  	width: 30%;
+  	margin-left: auto;
+    margin-right: auto;
+  	max-width: 100%;
     max-height: 100vh;
-    margin-top: 80px;
+    margin-top: 30px;
     margin-bottom: 20px;
 }
 
 #hsc-section img {
   display: block;
-  max-width: 30%;
+  max-width: 75%;
   margin-left: auto;
   margin-right: auto;
   max-height: 100vh;
