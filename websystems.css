@@ -98,7 +98,7 @@ h1.center-align {
 	background-color: #2196F3;
 }
 
-#header-page {
+.header-page {
 	background-color: #2196F3;
 }
 
@@ -446,7 +446,7 @@ li a:visited {
   	max-width: 100%;
     max-height: 100vh;
     margin-top: 30px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 #hsc-section img {
@@ -456,7 +456,7 @@ li a:visited {
   margin-right: auto;
   max-height: 100vh;
   margin-top: 50px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 #background-section img:hover {
