@@ -435,7 +435,8 @@ li a:visited {
     max-height: 100vh;
   	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-
+    margin-top: 60px;
+    margin-bottom: 20px;
 }
 
 #work-section img {
@@ -444,7 +445,8 @@ li a:visited {
   	margin-right: 5px;
   	width: 30%;
     max-height: 100vh;
-
+    margin-top: 80px;
+    margin-bottom: 20px;
 }
 
 #hsc-section img {
@@ -453,6 +455,8 @@ li a:visited {
   margin-left: auto;
   margin-right: auto;
   max-height: 100vh;
+  margin-top: 50px;
+  margin-bottom: 20px;
 }
 
 #background-section img:hover {
@@ -465,6 +469,7 @@ p.less-strict-container +  img {
   	margin-left: auto;
   	margin-right: auto;
   	max-width: 75%;
+
 
 }
 
@@ -481,6 +486,7 @@ p.less-strict-container +  img {
   max-width: 25%;
   float: left;
   background-color: #34495e;
+  margin-bottom: 20px;
 
 }
 
@@ -490,6 +496,7 @@ p.less-strict-container +  img {
   float: right;
   max-width: 25%;
   background-color: #34495e;
+  margin-bottom: 20px;
 
 }
 
@@ -500,6 +507,7 @@ p.less-strict-container +  img {
   margin-left: auto;
   margin-right: auto;
   background-color: #34495e;
+  margin-bottom: 20px;
 }
 
 .project-card1:hover {
